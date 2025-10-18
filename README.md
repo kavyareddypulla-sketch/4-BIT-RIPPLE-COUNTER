@@ -14,13 +14,11 @@ Quartus prime
 
 A binary ripple counter consists of a series connection of complementing flip-flops (T or JK type), with the output of each flip-flop connected to the Clock Pulse input of the next higher-order flip-flop. The flip-flop holding the least significant bit receives the incoming count pulses. The diagram of a 4-bit binary ripple counter is shown in Fig. below.
 
-![image](https://github.com/naavaneetha/4-BIT-RIPPLE-COUNTER/assets/154305477/cb4b74d4-31ab-4359-95d0-d22e67daba13)
+<img width="680" height="340" alt="image" src="https://github.com/user-attachments/assets/43e6407e-f5c1-4630-ba3a-0a2c529babff" />
+
 
 In timing diagram Q0 is changing as soon as the negative edge of clock pulse is encountered, Q1 is changing when negative edge of Q0 is encountered(because Q0 is like clock pulse for second flip flop) and so on.
-
-![image](https://github.com/naavaneetha/4-BIT-RIPPLE-COUNTER/assets/154305477/a573a7d6-014e-4e54-93e6-e2ac9530960b)
-
-![image](https://github.com/naavaneetha/4-BIT-RIPPLE-COUNTER/assets/154305477/85e1958a-2fc1-49bb-9a9f-d58ccbf3663c)
+<img width="501" height="628" alt="image" src="https://github.com/user-attachments/assets/c2d1e017-d071-4b20-a7c0-f58c49881a50" />
 
 **Procedure**
 1.Type the program in Quartus software.
@@ -33,8 +31,8 @@ In timing diagram Q0 is changing as soon as the negative edge of clock pulse is 
 /* write all the steps invloved */
 
 **PROGRAM**
- Developed by:A.RAFSHAAN AHMED
- RegisterNumber:24005401
+ Developed by:KAVYA P
+ RegisterNumbe:25008896
 
 module RippleCounter(
    input wire clk,  // Clock input
@@ -99,10 +97,11 @@ endmodule
  RegisterNumber:25008896*/
 
 **RTL LOGIC FOR 4 Bit Ripple Counter**
-<img width="935" height="432" alt="image" src="https://github.com/user-attachments/assets/386519fa-e29e-46cf-9d14-d63766b6ac58" />
+<img width="1158" height="525" alt="image" src="https://github.com/user-attachments/assets/1c600eb9-a3f5-482e-92ad-ab5ded8b356b" />
+
 
 **TIMING DIGRAMS FOR 4 Bit Ripple Counter**
-<img width="1034" height="254" alt="image" src="https://github.com/user-attachments/assets/525cba43-7d99-47b1-99d0-6f4565562934" />
+<img width="1270" height="316" alt="image" src="https://github.com/user-attachments/assets/6deb7710-a9eb-4e1c-bcd7-67f02e2224c9" />
 
 **RESULTS**
 The 4-bit ripple counter was successfully implemented using Verilog in Quartus Prime. The functionality was verified using a testbench, which simulated the counter's operation. The counter correctly counted from 0000 to 1111, incrementing by 1 on each clock pulse. After reaching 1111, the counter reset to 0000, as expected. The timing diagrams and the functional table showed that the ripple counter operated as intended, with each flip-flop toggling on the rising edge of the previous flip-flop's output. The simulation results confirmed the correct operation of the 4-bit ripple counter.
